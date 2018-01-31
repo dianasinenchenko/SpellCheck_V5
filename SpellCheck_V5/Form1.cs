@@ -16,5 +16,10 @@ namespace SpellCheck_V5
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
