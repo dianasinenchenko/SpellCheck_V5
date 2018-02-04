@@ -55,12 +55,12 @@ namespace SpellCheck_V5
             }
             
 
-           foreach (string inputTerm in lines)
+          foreach (string inputTerm in lines)
             {
               string inputTermChange = inputTerm.Trim(new char[] { ',', '.', '!', '?' });
               string lowerText = inputTermChange.ToLower();
 
-                if (dictionaryList.Exists(x => String.Equals(x, inputTermChange)))
+                if (dictionaryList.Exists(x => String.Equals(x, lowerText)))
                 { }
                 else
                 {
