@@ -7,7 +7,8 @@ using System.Windows.Forms;
 namespace SpellCheck_V5
 {
     static class Program
-    {
+    {     
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -16,8 +17,8 @@ namespace SpellCheck_V5
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
-            
+            Application.Run(new Form2());
+           
         }
     }
 }
