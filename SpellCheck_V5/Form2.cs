@@ -55,7 +55,7 @@ namespace SpellCheck_V5
             }
             
 
-            foreach (string inputTerm in lines)
+           foreach (string inputTerm in lines)
             {
               string inputTermChange = inputTerm.Trim(new char[] { ',', '.', '!', '?' });
               string lowerText = inputTermChange.ToLower();
@@ -64,8 +64,8 @@ namespace SpellCheck_V5
                 { }
                 else
                 {
-                    setInputWrongWord(inputTerm);
-                    richTextBox1.Select(lowerText.IndexOf(lowerText), lowerText.Length);
+                    setInputWrongWord(inputTermChange);
+                    richTextBox1.Select(richTextBox1.Text.IndexOf(inputTerm), lowerText.Length);
                     richTextBox1.SelectionFont = new Font(richTextBox1.SelectionFont, FontStyle.Underline);
                     richTextBox1.SelectionColor = Color.Red;                   
                     setAllText(richTextBox1.Text.ToString());
